@@ -1,0 +1,12 @@
+# Dependabot for the public mirror KnoxCall/sdk-go. This folder is copied to
+# that repository's root by .github/workflows/mirror-sdk-go.yml in the
+# KnoxCall monorepo, where GitHub reads it. It has no effect inside the
+# monorepo; there, the root .github/dependabot.yml and sdk-ci's dependency
+# audit cover this SDK. Pinned by tests/coverage/sdk-security-policy-coverage.test.ts.
+version: 2
+updates:
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
